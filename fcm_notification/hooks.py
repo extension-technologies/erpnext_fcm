@@ -9,6 +9,12 @@ app_color = "grey"
 app_email = "rahibhassan.10@gmail.com"
 app_license = "MIT"
 
+doc_events = {
+	"Notification Log": {
+		"after_insert": "fcm_notification.notification_log.after_insert"
+	}
+}
+
 # Includes in <head>
 # ------------------
 
