@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-03 19:12:44.810722",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notification_type",
+  "title",
+  "idtopic",
+  "server_response",
+  "column_break_tn8f4",
+  "body",
+  "data",
+  "amended_from",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "notification_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Notification Type",
+   "options": "Topic\nID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Firebase Notification",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Body",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tn8f4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idtopic",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "ID/Topic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "JSON",
+   "label": "Data"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "server_response",
+   "fieldtype": "Text",
+   "label": "Server Response"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-06 13:16:58.721016",
+ "modified_by": "Administrator",
+ "module": "Fcm Notification",
+ "name": "Firebase Notification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "settings_section",
-  "server_key"
+  "server_key",
+  "enable_notifications"
  ],
  "fields": [
   {
@@ -20,12 +21,18 @@
    "fieldtype": "Data",
    "label": "Server Key",
    "length": 250
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_notifications",
+   "fieldtype": "Check",
+   "label": "Enable Notifications"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-02-06 15:25:43.703960",
+ "modified": "2023-11-01 14:50:43.810048",
  "modified_by": "Administrator",
  "module": "Fcm Notification",
  "name": "FCM Notification Settings",
@@ -43,5 +50,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }
